@@ -121,7 +121,7 @@ export default class TypingAsstPlugin extends Plugin {
 				const cursor = editor.getCursor();
 				const lineContent = editor.getLine(cursor.line);
 
-				let lineStyle = "Text";
+				let lineStyle = TEXT_MAP["text"];
 				for (const cmd in CONTENT_MAP) {
 					if (cmd === "text") {
 						continue;

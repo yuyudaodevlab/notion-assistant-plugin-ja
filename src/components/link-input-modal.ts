@@ -19,10 +19,10 @@ export class InsertLinkModal extends Modal {
 		this.isOpen = true;
 		const { contentEl } = this;
 		this.linkUrl = "";
-		contentEl.createEl("h1", { text: "Insert a link bookmark" });
+		contentEl.createEl("h1", { text: "リンクブックマークを挿入" });
 
 		new Setting(contentEl)
-			.setName("Link URL")
+			.setName("リンク先のURL")
 			.addText((text) =>
 				text.setValue(this.linkUrl).onChange((value) => {
 					this.linkUrl = value;
@@ -32,7 +32,7 @@ export class InsertLinkModal extends Modal {
 
 		new Setting(contentEl).addButton((btn) =>
 			btn
-				.setButtonText("Insert")
+				.setButtonText("挿入")
 				.setCta()
 				.onClick(() => {
 					this.checkUrl(this.linkUrl);
@@ -57,7 +57,7 @@ export class InsertLinkModal extends Modal {
 			this.close();
 			this.onSubmit(url);
 		} else {
-			new Notice("Please input a valid url");
+			new Notice("有効なURLを入力");
 		}
 	}, 10);
 }

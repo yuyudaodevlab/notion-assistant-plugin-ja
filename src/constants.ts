@@ -39,33 +39,33 @@ export const ICON_MAP = {
 }
 
 export const TEXT_MAP = {
-	['text']: "Text",
-	['heading1']: "Heading1",
-	['heading2']: "Heading2",
-	['heading3']: "Heading3",
-	['heading4']: "Heading4",
-	['heading5']: "Heading5",
-	['heading6']: "Heading6",
-	['todoList']: "To-do List",
-	['bulletList']: "Bulleted List",
-	['numberList']: "Numbered List",
-	['code']: "Code",
-	['quote']: "Quote",
-	['linkBookMark']: "Link Bookmark",
-	['divide']: "Divide",
-	["noteCallout"]: "Note Callout",
-	["abstractCallout"]: "Abstract Callout",
-	["infoCallout"]: "Info Callout",
-	["todoCallout"]: "Todo Callout",
-	["tipCallout"]: "Tip Callout",
-	["successCallout"]: "Success Callout",
-	["questionCallout"]: "Question Callout",
-	["warningCallout"]: "Warning Callout",
-	["failureCallout"]: "Failure Callout",
-	["dangerCallout"]: "Danger Callout",
-	["bugCallout"]: "Bug Callout",
-	["exampleCallout"]: "Example Callout",
-	["quoteCallout"]: "Quote Callout",
+	['text']: "テキスト",
+	['heading1']: "見出し1",
+	['heading2']: "見出し2",
+	['heading3']: "見出し3",
+	['heading4']: "見出し4",
+	['heading5']: "見出し5",
+	['heading6']: "見出し6",
+	['todoList']: "タスクリスト",
+	['bulletList']: "箇条書きリスト",
+	['numberList']: "番号付きリスト",
+	['code']: "コード",
+	['quote']: "引用",
+	['linkBookMark']: "リンクブックマーク",
+	['divide']: "区切り線",
+	["noteCallout"]: "コールアウト（ノート）",
+	["abstractCallout"]: "コールアウト（要約）",
+	["infoCallout"]: "コールアウト（情報）",
+	["todoCallout"]: "コールアウト（タスク）",
+	["tipCallout"]: "コールアウト（ヒント）",
+	["successCallout"]: "コールアウト（成功）",
+	["questionCallout"]: "コールアウト（質問）",
+	["warningCallout"]: "コールアウト（警告）",
+	["failureCallout"]: "コールアウト（失敗）",
+	["dangerCallout"]: "コールアウト（危険）",
+	["bugCallout"]: "コールアウト（バグ）",
+	["exampleCallout"]: "コールアウト（例）",
+	["quoteCallout"]: "コールアウト（引用）",
 };
 ``
 export const CMD_INSERTIONS = {
@@ -185,254 +185,254 @@ export const SELECTION_CMDS = [
 
 export const CMD_CONFIG = {
 	["insert-note-callout"]: {
-		title: "Note Callout",
+		title: "コールアウト（ノート）",
 		icon: "note-call-out",
 		cmd: "typing-assistant:insert-note-callout"
 	},
 	["insert-abstract-callout"]: {
-		title: "Abstract Callout",
+		title: "コールアウト（要約）",
 		icon: "abstract-call-out",
 		cmd: "typing-assistant:insert-abstract-callout"
 	},
 	["insert-info-callout"]: {
-		title: "Info Callout",
+		title: "コールアウト（情報）",
 		icon: "info-call-out",
 		cmd: "typing-assistant:insert-info-callout"
 	},
 	["insert-todo-callout"]: {
-		title: "Todo Callout",
+		title: "コールアウト（タスク）",
 		icon: "todo-call-out",
 		cmd: "typing-assistant:insert-todo-callout"
 	},
 	["insert-tip-callout"]: {
-		title: "Tip Callout",
+		title: "コールアウト（ヒント）",
 		icon: "tip-call-out",
 		cmd: "typing-assistant:insert-tip-callout"
 	},
 	["insert-success-callout"]: {
-		title: "Success Callout",
+		title: "コールアウト（成功）",
 		icon: "success-call-out",
 		cmd: "typing-assistant:insert-success-callout"
 	},
 	["insert-question-callout"]: {
-		title: "Question Callout",
+		title: "コールアウト（質問）",
 		icon: "question-call-out",
 		cmd: "typing-assistant:insert-question-callout"
 	},
 	["insert-warning-callout"]: {
-		title: "Warning Callout",
+		title: "コールアウト（警告）",
 		icon: "warning-call-out",
 		cmd: "typing-assistant:insert-warning-callout"
 	},
 	["insert-failure-callout"]: {
-		title: "Failure Callout",
+		title: "コールアウト（失敗）",
 		icon: "failure-call-out",
 		cmd: "typing-assistant:insert-failure-callout"
 	},
 	["insert-danger-callout"]: {
-		title: "Danger Callout",
+		title: "コールアウト（危険）",
 		icon: "danger-call-out",
 		cmd: "typing-assistant:insert-danger-callout"
 	},
 	["insert-bug-callout"]: {
-		title: "Bug Callout",
+		title: "コールアウト（バグ）",
 		icon: "bug-call-out",
 		cmd: "typing-assistant:insert-bug-callout"
 	},
 	["insert-example-callout"]: {
-		title: "Example Callout",
+		title: "コールアウト（例）",
 		icon: "example-call-out",
 		cmd: "typing-assistant:insert-example-callout"
 	},
 	["insert-quote-callout"]: {
-		title: "Quote Callout",
+		title: "コールアウト（引用）",
 		icon: "quote-call-out",
 		cmd: "typing-assistant:insert-quote-callout"
 	},
 	'insert-tag': {
-		title: 'Tag',
+		title: 'タグ',
 		icon: 'tag',
 		cmd: "typing-assistant:insert-tag"
 	},
 	'insert-quote': {
-		title: 'Quote',
+		title: '引用',
 		icon: 'quote',
 		cmd: "typing-assistant:insert-quote"
 	},
 	'insert-math': {
-		title: 'Math Block',
+		title: '数式ブロック',
 		icon: 'math',
 		cmd: "typing-assistant:insert-mathblock"
 	},
 	'insert-embed': {
-		title: 'Embed',
+		title: '埋め込み',
 		icon: 'embed',
 		cmd: "typing-assistant:insert-embed"
 	},
 	'insert-text': {
-		title: 'Text',
+		title: 'テキスト',
 		icon: 'text',
 		cmd: 'typing-assistant:insert-text'
 	},
 	'insert-heading1': {
-		title: 'Heading1',
+		title: '見出し1',
 		icon: 'heading1',
 		cmd: 'typing-assistant:insert-heading1'
 	},
 	'insert-heading2': {
-		title: 'Heading2',
+		title: '見出し2',
 		icon: 'heading2',
 		cmd: 'typing-assistant:insert-heading2'
 	},
 	'insert-heading3': {
-		title: 'Heading3',
+		title: '見出し3',
 		icon: 'heading3',
 		cmd: 'typing-assistant:insert-heading3'
 	},
 	'insert-heading4': {
-		title: 'Heading4',
+		title: '見出し4',
 		icon: 'heading4',
 		cmd: 'typing-assistant:insert-heading4'
 	},
 	'insert-heading5': {
-		title: 'Heading5',
+		title: '見出し5',
 		icon: 'heading5',
 		cmd: 'typing-assistant:insert-heading5'
 	},
 	'insert-heading6': {
-		title: 'Heading6',
+		title: '見出し6',
 		icon: 'heading6',
 		cmd: 'typing-assistant:insert-heading6'
 	},
 	'insert-bookmark': {
-		title: 'BookMark',
+		title: 'リンクブックマーク',
 		icon: 'bookmark',
 		cmd: 'typing-assistant:insert-bookmark'
 	},
 	'insert-todo': {
-		title: 'To-do List',
+		title: 'タスクリスト',
 		icon: 'todoList',
 		cmd: 'typing-assistant:insert-todo'
 	},
 	'insert-bulletList': {
-		title: 'BulletList',
+		title: '箇条書きリスト',
 		icon: 'bulletList',
 		cmd: 'typing-assistant:insert-bulletList'
 	},
 	'insert-numberList': {
-		title: 'NumberList',
+		title: '番号付きリスト',
 		icon: 'numberList',
 		cmd: 'typing-assistant:insert-numberList'
 	},
 	'insert-divide': {
-		title: 'Divide',
+		title: '区切り線',
 		icon: 'divide',
 		cmd: 'typing-assistant:insert-divide'
 	},
 	'insert-code': {
-		title: 'Code',
+		title: 'コード',
 		icon: 'code',
 		cmd: 'typing-assistant:insert-codeblock'
 	},
 	'toggle-math': {
-		title: 'Math',
+		title: '数式',
 		icon: 'math',
 		cmd: 'editor:toggle-inline-math'
 	},
 	'toggle-highlight': {
-		title: 'Highlight',
+		title: 'ハイライト',
 		icon: 'highlight',
 		cmd: 'editor:toggle-highlight'
 	},
 
 	"bookmark": {
-		title: 'Link BookMark',
+		title: 'リンクブックマーク',
 		icon: 'link',
 		cmd: 'typing-assistant:insert-bookmark'
 	},
 
 	'set-text': {
-		title: 'Text',
+		title: 'テキスト',
 		icon: 'text',
 		cmd: 'editor:set-heading-0'
 	},
 	'set-heading1': {
-		title: 'Heading1',
+		title: '見出し1',
 		icon: 'heading1',
 		cmd: 'editor:set-heading-1'
 	},
 	'set-heading2': {
-		title: 'Heading2',
+		title: '見出し2',
 		icon: 'heading2',
 		cmd: 'editor:set-heading-2'
 	},
 	'set-heading3': {
-		title: 'Heading3',
+		title: '見出し3',
 		icon: 'heading3',
 		cmd: 'editor:set-heading-3'
 	},
 	'set-heading4': {
-		title: 'Heading4',
+		title: '見出し4',
 		icon: 'heading4',
 		cmd: 'editor:set-heading-4'
 	},
 	'set-heading5': {
-		title: 'Heading5',
+		title: '見出し5',
 		icon: 'heading5',
 		cmd: 'editor:set-heading-5'
 	},
 	'set-heading6': {
-		title: 'Heading6',
+		title: '見出し6',
 		icon: 'heading6',
 		cmd: 'editor:set-heading-6'
 	},
 	'set-todo': {
-		title: 'To-do List',
+		title: 'タスクリスト',
 		icon: 'todoList',
 		cmd: "typing-assistant:todo-list"
 	},
 	'set-bulletList': {
-		title: 'BulletList',
+		title: '箇条書きリスト',
 		icon: 'bulletList',
 		cmd: "editor:toggle-bullet-list"
 	},
 	'set-numberList': {
-		title: 'NumberList',
+		title: '番号付きリスト',
 		icon: 'numberList',
 		cmd: "editor:toggle-numbered-list",
 	},
 	'set-link': {
-		title: 'Link',
+		title: 'リンク',
 		icon: 'link',
 		cmd: 'editor:insert-link'
 	},
 	'toggle-bold': {
-		title: 'Bold',
+		title: '太字',
 		icon: 'bold',
 		cmd: "editor:toggle-bold",
 	},
 	'toggle-strikethrough': {
-		title: 'Strikethrough',
+		title: '取り消し線',
 		icon: 'strikethrough',
 		cmd: "editor:toggle-strikethrough",
 	},
 	'toggle-italics': {
-		title: 'Italics',
+		title: '斜体',
 		icon: 'italics',
 		cmd: "editor:toggle-italics",
 	},
 	'toggle-underline': {
-		title: 'Underline',
+		title: '下線',
 		icon: 'underline',
 		cmd: "typing-assistant:underline",
 	},
 	'toggle-code': {
-		title: 'Code',
+		title: 'コード',
 		icon: 'code',
 		cmd: "editor:toggle-code",
 	},
 	'insert-table': {
-		title: 'Table',
+		title: '表',
 		icon: 'table',
 		cmd: "typing-assistant:insert-table",
 	},

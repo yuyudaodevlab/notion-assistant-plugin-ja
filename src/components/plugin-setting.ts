@@ -28,14 +28,16 @@ export class ExampleSettingTab extends PluginSettingTab {
 
         containerEl.createEl("h2", { text: "Typing Assistant" });
 
-        containerEl.createEl("p", { text: "For any questions or suggestions during use, please feel free to " }).createEl("a", {
-            text: "contact me",
+        const support = containerEl.createEl("p", { text: "質問や提案は" });
+        support.createEl("a", {
+            text: "GitHub",
             href: "https://github.com/Jambo2018/notion-assistant-plugin",
         });
+        support.appendText("で受け付ける。");
 
         new Setting(containerEl)
-            .setName("Non-empty Line Disabled")
-            .setDesc("The shortcut key `/` is only recognized at the first character of a blank line, ignoring lines of text in the input.")
+            .setName("空行でのみコマンドメニューを表示")
+            .setDesc("空行の先頭で「/」を入力したときだけコマンドメニューを表示する。")
             .addToggle((component) =>
                 component
                     .setValue(this.plugin.settings.nonEmptyLineDisabled)
@@ -47,8 +49,8 @@ export class ExampleSettingTab extends PluginSettingTab {
             );
 
         new Setting(containerEl)
-            .setName("Typing Placeholder")
-            .setDesc("Show \"💡Please input ‘ / ’ for more commands...\" prompt when typing on a blank line")
+            .setName("入力ヒントを表示")
+            .setDesc("空行に「💡『/』を入力してコマンドを表示」というヒントを表示する。")
             .addToggle((component) =>
                 component
                     .setValue(this.plugin.settings.showPlaceholder)
@@ -60,8 +62,8 @@ export class ExampleSettingTab extends PluginSettingTab {
             );
 
         new Setting(containerEl)
-            .setName("Selection Options")
-            .setDesc("Display shortcut options after selecting text")
+            .setName("文字選択メニューを表示")
+            .setDesc("文字を選択したときに書式を変更するメニューを表示する。")
             .addToggle((component) =>
                 component
                     .setValue(!this.plugin.settings.disableSelectionMenu)
@@ -73,8 +75,8 @@ export class ExampleSettingTab extends PluginSettingTab {
 
 
         new Setting(containerEl)
-            .setName("Commands Menu")
-            .setDesc("Supports custom command combinations and drag-and-drop sorting; please ensure that at least 5 commands are open")
+            .setName("コマンドメニュー")
+            .setDesc("表示するコマンドを選び、ドラッグ＆ドロップで順序を変更できます。コマンドは5個以上有効にする必要があります。")
 
         const CmdSettings = containerEl.createDiv({ cls: "heading-config" })
 

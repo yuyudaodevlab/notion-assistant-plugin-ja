@@ -222,7 +222,7 @@
 	bottom: 0;
 	left: 3px;
 	color: var(--empty-prompt);
-	content: "💡Please input ‘ / ’ for more commands...";
+	content: "💡「/」を入力してコマンドを表示";
 }
 
 .table-editor .cm-active:has(br)::before {

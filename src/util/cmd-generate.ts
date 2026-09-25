@@ -73,7 +73,7 @@ export function loadCommands() {
 
     this.addCommand({
         id: "insert-text",
-        name: "Insert normal text",
+        name: "テキストを挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['text'])
         },
@@ -81,70 +81,70 @@ export function loadCommands() {
 
     this.addCommand({
         id: "insert-heading1",
-        name: "Insert Heading-1",
+        name: "見出し1を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['heading1'])
         },
     });
     this.addCommand({
         id: "insert-heading2",
-        name: "Insert Heading-2",
+        name: "見出し2を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['heading2'])
         },
     });
     this.addCommand({
         id: "insert-heading3",
-        name: "Insert Heading-3",
+        name: "見出し3を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['heading3'])
         },
     });
     this.addCommand({
         id: "insert-heading4",
-        name: "Insert Heading-4",
+        name: "見出し4を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['heading4'])
         },
     });
     this.addCommand({
         id: "insert-heading5",
-        name: "Insert Heading-5",
+        name: "見出し5を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['heading5'])
         },
     });
     this.addCommand({
         id: "insert-heading6",
-        name: "Insert Heading-6",
+        name: "見出し6を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['heading6'])
         },
     });
     this.addCommand({
         id: "insert-todo",
-        name: "Insert TodoList",
+        name: "タスクリストを挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['todoList'])
         },
     });
     this.addCommand({
         id: "insert-bulletList",
-        name: "Insert BulletList",
+        name: "箇条書きリストを挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['bulletList'])
         },
     });
     this.addCommand({
         id: "insert-numberList",
-        name: "Insert NumberList",
+        name: "番号付きリストを挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['numberList'])
         },
     });
     this.addCommand({
         id: "insert-table",
-        name: "Insert Table",
+        name: "表を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent('')
             this.app.commands.executeCommandById('editor:insert-table')
@@ -153,119 +153,119 @@ export function loadCommands() {
     });
     this.addCommand({
         id: "insert-bookmark",
-        name: "Insert BookMark",
+        name: "リンクブックマークを挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['bookmark'])
         },
     });
     this.addCommand({
         id: "insert-divide",
-        name: "Insert Divide",
+        name: "区切り線を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['divide'])
         },
     });
     this.addCommand({
         id: "insert-quote",
-        name: "Insert Quote",
+        name: "引用を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['quote'])
         },
     });
     this.addCommand({
         id: "insert-note-callout",
-        name: "Insert Callout",
+        name: "コールアウト（ノート）を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP["noteCallout"]);
         }
     });
     this.addCommand({
         id: "insert-abstract-callout",
-        name: "Insert Callout",
+        name: "コールアウト（要約）を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP["abstractCallout"]);
         }
     });
     this.addCommand({
         id: "insert-info-callout",
-        name: "Insert Callout",
+        name: "コールアウト（情報）を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP["infoCallout"]);
         }
     });
     this.addCommand({
         id: "insert-todo-callout",
-        name: "Insert Callout",
+        name: "コールアウト（タスク）を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP["todoCallout"]);
         }
     });
     this.addCommand({
         id: "insert-tip-callout",
-        name: "Insert Callout",
+        name: "コールアウト（ヒント）を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP["tipCallout"]);
         }
     });
     this.addCommand({
         id: "insert-success-callout",
-        name: "Success Callout",
+        name: "コールアウト（成功）を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP["successCallout"]);
         }
     });
     this.addCommand({
         id: "insert-question-callout",
-        name: "Question Callout",
+        name: "コールアウト（質問）を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP["questionCallout"]);
         }
     });
     this.addCommand({
         id: "insert-warning-callout",
-        name: "Warning Callout",
+        name: "コールアウト（警告）を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP["warningCallout"]);
         }
     });
     this.addCommand({
         id: "insert-failure-callout",
-        name: "Failure Callout",
+        name: "コールアウト（失敗）を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP["failureCallout"]);
         }
     });
     this.addCommand({
         id: "insert-danger-callout",
-        name: "Danger Callout",
+        name: "コールアウト（危険）を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP["dangerCallout"]);
         }
     });
     this.addCommand({
         id: "insert-bug-callout",
-        name: "Bug Callout",
+        name: "コールアウト（バグ）を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP["bugCallout"]);
         }
     });
     this.addCommand({
         id: "insert-example-callout",
-        name: "Example Callout",
+        name: "コールアウト（例）を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP["exampleCallout"]);
         }
     });
     this.addCommand({
         id: "insert-quote-callout",
-        name: "Quote Callout",
+        name: "コールアウト（引用）を挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP["quoteCallout"]);
         }
     });
     this.addCommand({
         id: "insert-mathblock",
-        name: "Insert Math Block",
+        name: "数式ブロックを挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['math'])
             CONTENT_MAP['code']
@@ -280,7 +280,7 @@ export function loadCommands() {
     });
     this.addCommand({
         id: "insert-codeblock",
-        name: "Insert Math Block",
+        name: "コードブロックを挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['code'])
             const view = this.app.workspace.getActiveViewOfType(MarkdownView)
@@ -294,7 +294,7 @@ export function loadCommands() {
     });
     this.addCommand({
         id: "insert-tag",
-        name: "Insert Tag",
+        name: "タグを挿入",
         editorCallback: (editor: Editor) => {
             const view = this.app.workspace.getActiveViewOfType(MarkdownView)
             if (view) {
@@ -313,7 +313,7 @@ export function loadCommands() {
 
     this.addCommand({
         id: "insert-embed",
-        name: "Insert Embed",
+        name: "埋め込みを挿入",
         editorCallback: (editor: Editor) => {
             replaceContent(CONTENT_MAP['embed'])
             const view = this.app.workspace.getActiveViewOfType(MarkdownView)
@@ -329,7 +329,7 @@ export function loadCommands() {
     // This adds a simple command that can be triggered anywhere
     this.addCommand({
         id: "underline",
-        name: "Underline/Cancel underline",
+        name: "下線を切り替え",
         editorCallback: (editor: Editor) => {
             const from = editor.getCursor("from");
             const to = editor.getCursor("to");
@@ -349,7 +349,7 @@ export function loadCommands() {
     });
     this.addCommand({
         id: "todo-list",
-        name: "Add TodoList",
+        name: "タスクリストを追加",
         editorCallback: (editor: Editor) => {
             const { line, ch } = editor.getCursor();
             const content = editor.getLine(line);
